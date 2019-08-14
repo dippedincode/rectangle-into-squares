@@ -1,0 +1,22 @@
+{
+  "name": "rectangle-into-squares",
+  "version": "1.0.0",
+  "description": "This project will be the solution to a Codewars Kata - https://www.codewars.com/kata/rectangle-into-squares",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dippedincode/rectangle-into-squares.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dippedincode/rectangle-into-squares/issues"
+  },
+  "homepage": "https://github.com/dippedincode/rectangle-into-squares#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
