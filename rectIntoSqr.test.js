@@ -19,3 +19,7 @@ test('Given a 3 x 5 rectangle', () => {
 test('Given a 10 x 7 rectangle', () => {
   expect(sqInRect(10, 7)).toEqual([7, 3, 3, 1, 1, 1]);
 });
+
+test('Given a 20 x 14 rectangle', () => {
+  expect(sqInRect(20, 14)).toEqual([14, 6, 6, 2, 2, 2]);
+});

@@ -1,13 +1,14 @@
 function sqInRect(lng, wdth) {
   if (lng == wdth) {
-    return null;
+    return lng;
   }
+  flag = true;
   if (lng < wdth) {
     temp = lng;
     lng = wdth;
     wdth = temp;
   }
-  return [wdth].concat(sqInRect(wdth, lng-wdth));  // [wdth, lng-wdth, wdth-(lng-wdth), 1]
+  return [wdth].concat(sqInRect(wdth, lng-wdth));
 }
 
 module.exports = sqInRect;
