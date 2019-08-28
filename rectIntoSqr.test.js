@@ -9,9 +9,9 @@ test('Given a square, not a rectangle', () => {
 });
 
 test('Given a 5 x 3 rectangle', () => {
-  expect(sqInRect(5, 3)).toEqual([3,2,1,1]);
+  expect(sqInRect(5, 3)).toEqual([3, 2, 1, 1]);
 });
 
 test('Given a 3 x 5 rectangle', () => {
-  expect(sqInRect(3, 5)).toEqual([3,2,1,1]);
+  expect(sqInRect(3, 5)).toEqual([3, 2, 1, 1]);
 });
