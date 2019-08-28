@@ -7,6 +7,7 @@ function sqInRect(lng, wdth) {
     lng = wdth;
     wdth = temp;
   }
-  return [wdth, lng-wdth, wdth-(lng-wdth), 1]; 
+  return [wdth].concat(sqInRect(wdth, lng-wdth));  // [wdth, lng-wdth, wdth-(lng-wdth), 1]
 }
+
 module.exports = sqInRect;
