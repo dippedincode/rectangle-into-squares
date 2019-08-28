@@ -3,7 +3,7 @@ function sqInRect(lng, wdth) {
     return null;
   }
   else {
-    return 'true rectangle';
+    return [wdth, lng-wdth, wdth-(lng-wdth), 1];
   }
 }
 module.exports = sqInRect;
