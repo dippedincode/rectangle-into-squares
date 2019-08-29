@@ -1,11 +1,15 @@
 const sqInRect = require('./rectIntoSqr');
 
-// test('Given a true rectangle', () => {
-//   expect(sqInRect(3, 5)).toBe('true rectangle');
-// });
+test('Given a 21 x 21 square', () => {
+  expect(sqInRect(21, 21)).toBeNull();
+});
 
-test('Given a square, not a rectangle', () => {
-  expect(sqInRect(5, 5)).toBeNull();
+test('Given a 50 x 50 square', () => {
+  expect(sqInRect(50, 50)).toBeNull();
+});
+
+test('Given a 11 x 11 square', () => {
+  expect(sqInRect(11, 11)).toBeNull();
 });
 
 test('Given a 5 x 3 rectangle', () => {

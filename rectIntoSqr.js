@@ -1,4 +1,4 @@
-function sqInRect(lng, wdth) {
+function sqInRect(lng,wdth) {
   if (!sqInRect.didrun) {
     if (lng == wdth)  {
       sqInRect.didrun = true;
