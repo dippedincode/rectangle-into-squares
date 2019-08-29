@@ -4,16 +4,16 @@ function sqInRect(lng, wdth) {
       sqInRect.didrun = true;
       return null;
     }
-    else if (lng == wdth)  {
-      return lng;
-    }
-    if (lng < wdth) {
-      temp = lng;
-      lng = wdth;
-      wdth = temp;
-    }
-    return [wdth].concat(sqInRect(wdth, lng-wdth));
   }
+  if (lng == wdth)  {
+      return lng;
+  }
+  if (lng < wdth) {
+    temp = lng;
+    lng = wdth;
+    wdth = temp;
+  }
+  return [wdth].concat(sqInRect(wdth, lng-wdth));
 }
 
 module.exports = sqInRect;
